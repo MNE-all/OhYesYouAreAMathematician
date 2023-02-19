@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
     private fun randomize() {
         binding.textViewSign.text = signs.random()
         if (binding.textViewSign.text == "/") {
+            // За идею с делением спасибо Калиниченко Т.М.!
             val operand = (1..99).random()
             binding.textViewFirstOperand.text = (operand  * (1..99).random()).toString()
             binding.textViewSecondOperand.text = operand.toString()
